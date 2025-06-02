@@ -23,15 +23,15 @@ def load_nasbench201(path='data/NAS-Bench-201-v1_1-096897.pth'):
     torch.load = safe_load
 
 
-    # Later reuse
-    with open('nasbench201_api.pkl', 'rb') as f:
-        api = pickle.load(f)
+    # # Later reuse
+    # with open('nasbench201_api.pkl', 'rb') as f:
+    #     api = pickle.load(f)
 
-    # try:
-    #     api = API('data/NAS-Bench-201-v1_1-096897.pth', verbose=True)
-    # finally:
+    try:
+        api = API('data/NAS-Bench-201-v1_1-096897.pth', verbose=True)
+    finally:
 
-    #     torch.load = original_load
+        torch.load = original_load
 
     # with open('nasbench201_api.pkl', 'wb') as f:
     #     pickle.dump(api, f)
