@@ -1,0 +1,1 @@
+{"arch": "|nor_conv_3x3~0|+|nor_conv_3x3~0|nor_conv_3x3~1|+|nor_conv_3x3~0|nor_conv_3x3~1|nor_conv_3x3~2|", "train_acc": 83.78, "test_acc": 82.2}
